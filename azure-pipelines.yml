@@ -4,7 +4,7 @@ trigger:
 variables:
   dockerRegistryServiceConnection: 'ACR_MSI'
   imageRepository: 'myapplicationdeployments.azurecr.io/maven-app'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
 stages:
